@@ -63,6 +63,10 @@ body {
   color: #404bbf;
 }
 
+.threeline > img {
+  display: none;
+} 
+
 /* main-head-chapter */
 /* section 1 */
 
@@ -815,6 +819,7 @@ img {
   fill: #F4F4FD;
 } */
 
+
 @media (min-width: 768px) and (max-width: 1158px) {
 
   .container {
@@ -864,6 +869,7 @@ img {
 
 .main-description-sections > .container {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .list-type .list-titles {
@@ -880,19 +886,86 @@ img {
   padding: 0px;
 }
 
-.four-persons  .container {
+.four-persons > .container {
   width: 100%;
-  padding-left: 108px;
-  padding-right: 108px;
-  padding-bottom: 96px;
+  padding: 0px;
 }
 
 .four-persons-list {
+
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  display: inline-block;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.persond-id {
   min-width: 264px;
 }
+
+.our-portfolios > .container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bottom-chapter > .container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 108px;
+  column-gap: 24px;
+  row-gap: 72px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  margin: 0;
+}
+
+.form-chapter {
+  margin: 0;
+}
+
+}
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .navigation-main > .nav-list {
+    display: none;
+  }
+
+  .threeline > img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
